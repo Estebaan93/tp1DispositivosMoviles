@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
   <!--ACA VAN LOS PERMISOS -->
-  <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
   <application
       android:allowBackup="true"
       android:dataExtractionRules="@xml/data_extraction_rules"
