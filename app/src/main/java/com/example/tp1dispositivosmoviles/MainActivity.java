@@ -26,4 +26,11 @@ public class MainActivity extends AppCompatActivity {
     super.onResume();
     registerReceiver(cambio, new IntentFilter(ACTION_AIRPLANE_MODE_CHANGED));
   }
+
+  /*Desregistrar el receiver cuando la actividad deja de ser visible*/
+  @Override
+  protected void onStop(){
+    super.onStop();
+    unregisterReceiver(cambio);
+  }
 }
